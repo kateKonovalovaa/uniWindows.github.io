@@ -1,0 +1,14 @@
+mixin header()
+    header.header
+        div.header__wrap.wrap
+            a.header__logo(href="#"): img(src="../assets/images/logo.png")
+            div.header__main
+                nav: ul.header__menu
+                        each name, value in {'home' : 'home', 'pages' : 'pages', 'elements' : 'elements', 'product' : 'product', 'blog' : 'blog', 'work' : 'work' }
+                            li.header__elem: a.header__link(href= "/" + name + ".html")= value
+                button.header__button.button start a project
+                div.header__burger
+                    - var n = 0;
+                    while n < 3
+                        - n++
+                        span
