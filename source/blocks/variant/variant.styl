@@ -1,0 +1,62 @@
+.variant
+    background-color smoke-white
+    position relative
+    z-index 5
+    padding 50px 0
+    &::before
+        position absolute
+        left 0
+        bottom -190px
+        content url(../../assets/images/choice-bottom.png)
+    &__wrap
+        position relative
+        &::before
+            position absolute
+            left -470px
+            bottom -100px
+            content url(../../assets/images/choice-float-1.png)
+            z-index 10
+        &::after
+            position absolute
+            right -470px
+            bottom -100px
+            content url(../../assets/images/choice-float-2.png)
+            z-index 10
+    &__title
+        margin 0
+        margin-bottom 90px
+    &__body
+        display flex
+    &__elem
+        display flex
+        flex-direction column
+        align-items center
+        &:first-child
+            margin-right 70px
+    &__img
+        position relative
+    &__subtitle
+        margin-bottom 19px
+    &__text
+        margin 10px 0 30px
+        color black
+
+.price-item
+    position absolute
+    top 50px
+    right -30px
+    background url(../../assets/images/cost-bg.png) no-repeat
+    height 210px
+    width 210px
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+    font 12px/1 'Museo Sans Medium', sans-serif
+    color black
+    padding-bottom 20px
+    box-sizing border-box
+    &__price
+        font 18px/1 'Neumann', sans-serif
+        color black
+        margin-top 10px

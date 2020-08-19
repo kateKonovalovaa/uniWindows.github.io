@@ -1,0 +1,156 @@
+.form-1
+    padding 120px 0 100px
+    background url(../../assets/images/form-1-bg.png)
+    &__body
+        display flex
+        justify-content space-between
+        width 90%
+        margin-right 0
+        margin-left auto
+    &__title
+        margin-bottom 42px
+
+
+.about
+    position relative
+    width 50%
+    &::after
+        position absolute
+        content url(../../assets/images/window.png)
+        height 100%
+        padding-bottom 23%
+    &__btn
+        width 46px
+        height 46px
+        background white
+        position absolute
+        border-radius 23px
+        display inline-block
+        box-shadow 0px 5px 20px 0px rgba(0, 0, 0, 0.2)
+        top 230px
+        right 160px
+        z-index 5
+        &::before
+            content ''
+            width 32px
+            height 32px
+            background mid-blue
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            border-radius 16px
+            display inline-block
+            cursor pointer
+        &::after
+            content '+'
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            color white
+            cursor pointer
+        &:first-child
+            top 130px
+            left 180px
+    &__hidden
+        position absolute
+        top 60px
+        left -265px
+        height 256px
+        width 366px
+        padding 70px 60px 50px
+        box-sizing border-box
+        background url(../../assets/images/about-window-bg.png) no-repeat
+        span
+            font 12px/1 'Museo Sans Black', sans-serif
+            color gray
+            display block
+            margin-bottom 10px
+        h5
+            font 30px/32px 'Neumann', sans-serif
+            margin 0
+            margin-bottom 12px
+            color black
+        p
+            font 16px/22px 'Museo Sans Light', sans-serif
+            color gray
+
+.action-form
+    width 460px
+    height auto
+    padding 70px 66px 106px;
+    box-sizing border-box
+    background url(../../assets/images/form-bg.png) no-repeat
+    &__title
+        margin-bottom 14px
+    &__text
+        font 16px/22px 'Museo Sans Light', sans-serif
+        color gray
+        text-align center
+        margin 0 auto 26px
+    &__input
+        margin-bottom 10px
+        &:last-of-type
+            margin-bottom 20px
+    &__btn
+        width 100%
+    &__agree
+        display flex
+        justify-content center
+        margin-top 20px
+        margin-right 70px
+        span
+            font 14px/16px "Museo Sans Light"
+            margin-left 7px
+            color gray
+            display inline-block
+    &__fake-checkbox
+        display inline-block
+        width 17px
+        height 17px
+        border 1px solid #bbb6ac
+        position relative
+        margin-bottom 10px
+        &::before
+            content url(../../assets/images/checkbox-bg-light.png)
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+
+.timer
+    &__title
+        font 24px/1 'Neumann', sans-serif
+        margin 0
+        color black
+        margin-bottom 20px
+        text-align center
+    &__counter-wrap
+        display flex
+        align-items center
+        justify-content center
+        margin 0 auto
+    &__elem
+        width 142px
+        height 174px
+        display flex
+        align-items center
+        flex-direction column
+        background url(../../assets/images/counter-bg.png) no-repeat
+        span
+            font 16px/22px "Museo Sans Light"
+            color gray
+        
+    &__colon
+        font 60px/1 'Neumann', sans-serif
+        color black
+        padding-bottom 40px
+    &__count
+        margin-top 40px
+        margin-bottom 5px
+        font 48px/1 'Neumann', sans-serif !important
+        color black !important
+    
+
+

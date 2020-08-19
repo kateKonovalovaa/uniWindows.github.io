@@ -1,0 +1,87 @@
+.additionally
+    padding 122px 0 58px
+    position relative
+    z-index 5
+    background-color bg
+    &__title
+        margin-bottom 84px
+    &__elems
+        display grid
+        grid-template-columns 1fr 1fr
+        grid-gap 30px
+    &__transition-img
+        position absolute
+        bottom -10px
+        left  0
+        z-index 2
+    &__elem
+        height 358px
+        position relative
+        border-radius 30px
+        overflow hidden
+        padding 18px
+        box-sizing border-box
+        &:nth-child(1)
+            background url(../../assets/images/work-1.jpg)
+        &:nth-child(2)
+            background url(../../assets/images/work-2.jpg)
+        &:nth-child(3)
+            background url(../../assets/images/work-3.jpg)
+        &:nth-child(4)
+            background url(../../assets/images/work-4.jpg)
+        &:hover
+            .additionally__hidden
+                background-color white
+            .additionally__subtitle--hidden
+                opacity 1
+                &::before
+                    opacity 1
+            .additionally__text
+                opacity 1
+        &::before
+            content url(../../assets/images/shadow.png)
+            position absolute
+            top 0
+            left 0
+    &__subtitle
+        font 30px/40px 'Neumann', sans-serif
+        color white
+        position relative
+        padding-top 35%
+        margin-left 40px
+        transition all 0.3s ease-in-out
+        &::before
+            content ''
+            position absolute
+            left 2px
+            bottom -28px
+            width 32px
+            height 3px
+            background mid-blue
+        &--hidden
+            opacity 0
+            margin-bottom 52px
+            margin-left 0
+            padding-top 0
+            color black
+            &::before
+                opacity 0
+    &__text
+        font 16px/24px 'Museo Sans Light', sans-serif
+        color gray
+        opacity 0
+        transition all 0.3s ease-in-out
+    &__hidden
+        width calc(100% - 36px)
+        height calc(100% - 36px)
+        border 1px solid white
+        padding 40px 20px 0 44px
+        box-sizing border-box
+        border-radius 30px
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        transition all 0.3s ease-in-out
+    &__btn
+        margin 50px auto 0

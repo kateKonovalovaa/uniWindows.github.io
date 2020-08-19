@@ -1,0 +1,55 @@
+.form-2
+    background fixed url(../../assets/images/form-2-bg.jpg) center -300px no-repeat
+    position relative
+    z-index 0
+    width 100%
+    padding-bottom 8%
+    padding-top 17%
+    &__wrap
+        display flex
+        position relative
+    &__man
+        position absolute
+        bottom 120px
+        right 0
+    &__transition-img
+        position absolute
+        bottom -7px
+        right 0
+        z-index 10
+    &__title
+        color white
+        text-align left
+        position relative
+        margin-bottom 30px
+        &::before
+            content ''
+            width 76px
+            height 2px
+            position absolute
+            top 42px
+            left -126px
+            background-color mid-blue
+    &__text
+        font 18px/30px 'Museo Sans Light', sans-serif
+        color gray
+        margin-bottom 60px
+    .action-form
+        width 488px
+        height 604px
+        padding 70px 66px 76px
+        box-sizing border-box
+        background url(../../assets/images/form-bg-2.png) no-repeat
+        &__title
+            margin-bottom 30px
+    .file-load
+        margin 10px 0 16px
+        display flex
+        align-items center
+        &__btn
+            font-size 14px
+            display block
+        &__img
+            width 40px
+            height 44px
+            margin 0 22px 0 40px

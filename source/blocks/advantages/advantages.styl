@@ -1,34 +1,114 @@
 .advantages
-    &__wrap
-        padding 0 0 120px 0
-    &__content
-        display grid
-        grid-template-columns repeat( auto-fit, minmax(250px, 1fr) );
-    &__item
-        max-width 240px
-        display flex
-        flex-direction column
-        align-items center
-        justify-content flex-start
-        h3, p {
-            text-align center
-        }
-    &__img 
-        height 45px
-        width auto
-        &--big
-            height 53px
-            width auto
-        img
-            height 100%
-            width auto
-            &--big
-                height px
-    &__title
-        margin-bottom 20px
+    background url(../../assets/images/advantages-bg.png) 50% 88% no-repeat
+    padding 122px 0 564px
     &__text
-        margin-bottom 20px
-    &__btn
-        font-size 12px
-        font-weight 600
+        font 18px/30px 'Museo Sans Light', sans-serif
+        color gray
+        text-align center
+    &__list
+        list-style none
+        display grid
+        grid-template-columns 1fr 1fr 1fr
+        grid-gap 32px
+        margin-top 80px
+    &__bottom
+        width 48%
+        margin-right 0
+        margin-left auto
+    &__sale
+        margin-bottom 60px
+        position relative
+        &::before
+            content url(../../assets/images/plus-icon.svg)
+            width 47px
+            height 47px
+            position absolute
+            top 35%
+            left -70px
+            transform translate(0, -50%)
+    &__sale-title
+        font 60px/84px 'Neumann', sans-serif
+        display block
+    &__sale-subtitle
+        font 24px/30px 'Museo Sans Light', sans-serif
+    &__benefits
+        list-style none
+
+.benefit
+    margin-left 280px
+    position relative
+    &:first-child
+        margin-bottom 46px
+        margin-left 130px
+    &::before
+            content url(../../assets/images/check.svg)
+            width 16px
+            height 16px
+            position absolute
+            top 25%
+            left -35px
+            transform translate(0, -50%)
+    &__title
+        font 30px/54px 'Neumann', sans-serif
+        display block
+        margin 0
+    &__text
+        font 16px/24px 'Museo Sans Light', sans-serif
+
+.advantage
+    border-radius 12px
+    font 18px/28px 'Neumann', sans-serif
+    background: rgba(255, 255, 255, 0.5)
+    width 302px
+    margin 0 auto 116px
+    position relative
+    padding 50px 0 54px
+    box-shadow 0 0 18px 0 rgba(0, 0, 0, 0.1)
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    &__title
+        font 18px/28px 'Neumann', sans-serif
         text-transform uppercase
+        color dark-gray
+        text-align center
+        margin 0
+    &__num
+        margin 10px 0
+        font 120px/1 'Neumann', sans-serif
+        text-shadow 0 8px 3px rgba(0, 0, 0, 0.1)
+        color mid-blue
+        position relative
+    &__text
+        font 18px/28px 'Neumann', sans-serif
+        text-transform uppercase
+        color dark-gray
+        text-align center
+        margin 0
+        position relative
+        &::before
+            content ''
+            width: 20px
+            height: 1px
+            background gray
+            position absolute
+            left -40px
+            top 50%
+        &::after
+            content ''
+            width: 20px
+            height: 1px
+            background gray
+            position absolute
+            right -40px
+            top 50%
+    &::before
+        content ''
+        width calc(100% + 40px)
+        height calc(100% + 40px)
+        position absolute
+        left -24px
+        top -24px
+        border 5px solid rgba(255, 255, 255, 0.5)
+        border-radius 28px

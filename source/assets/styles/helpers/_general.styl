@@ -3,7 +3,7 @@
 
 
 .wrap 
-    min-max(320px, 980px, 10px)
+    min-max(320px, 1140px, 10px)
 
 
 li 
@@ -15,16 +15,15 @@ ul
 
     
 body
-    font-family "Montserrat", Helvetica, sans-serif
+    font-family 'Museo Sans Regular', Helvetica, sans-serif
     font-size 14px
-    font-weight 400 
     line-height 22px
     background-color bg
     overflow-wrap break-word
     word-wrap break-word
     max-width 1920px
     margin 0 auto
-    color light-black
+    color black
 
 h1, h2, h3, p
     margin 0
@@ -49,9 +48,57 @@ h1, h2, h3, p
     color light-black
     opacity .5
 
-.title
-    font-size 72px
-    font-weight 200
-    line-height 80px
-    letter-spacing 0.03em
-    color light-black
+.title-1
+    font 84px/1 'Neumann', sans-serif
+
+.title-2
+    font 60px/72px 'Neumann', sans-serif
+    text-align center
+
+.title-3
+    font 400 30px/1 'Neumann', sans-serif
+    text-align center
+
+.subtitle
+    font 16px/22px 'Museo Sans Light', sans-serif
+    color #9b9892
+    text-align center
+
+.btn-main
+    button(280px)
+    position relative
+    z-index 10
+
+.btn-link
+    text-transform uppercase
+    color mid-blue
+    border-bottom 1px dashed mid-blue
+    letter-spacing 1px
+    font 11px/1 'Museo Sans Black', sans-serif
+    padding-bottom 2px
+    cursor pointer
+    transition all 0.2s ease-in-out
+    z-index 2
+    position relative
+    &:hover
+        color lighten(mid-blue, 10)
+
+.input
+    height 80px
+    padding 0px 42px
+    box-sizing border-box
+    width 100%
+    background-color smoke-white
+    font 16px/1 'Museo Sans Regular', sans-serif
+    color black
+    border-radius 40px
+    box-shadow none
+    appearance none
+    border none
+    outline none
+    transition all 0.2s
+    &:hover
+        background-color darken(smoke-white, 1)
+    &::placeholder
+        font 16px/1 'Museo Sans Regular', sans-serif
+        color gray

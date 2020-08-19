@@ -1,0 +1,106 @@
+.steps
+    position relative
+    &__wrap
+        width 100%
+    display flex
+    flex-direction column
+    justify-content center
+    &__title
+        margin-bottom 50px
+    &__main
+        width 100%
+    &__transition-img
+        position absolute
+        bottom -160px
+        right 0
+        z-index 10
+.slider
+    display flex
+    flex-direction column
+    justify-content center
+    &__title
+        font 36px/40px 'Neumann', sans-serif
+        margin-bottom 24px
+    &__text
+        font 16px/24px 'Museo Sans Light', sans-serif
+        color gray
+    &__main
+        display flex
+    &__slide-container
+        margin 0 auto
+        width 82%
+    &__content
+        display flex
+        flex-direction column
+        align-items center
+        text-align center
+        .slider__title
+            margin 50px 0 24px
+    &__content--btn
+        margin 56px auto 0
+        width 82%
+        display grid
+        grid-template-columns 2fr 1fr
+        align-items center
+        button
+            min-width 250px
+            width 250px
+    &__btn-slide
+        margin-top 250px
+        display flex
+        align-items center
+        justify-content center
+        background-color mid-blue
+        transition all 0.3s ease-in-out
+        width 50px
+        height 50px
+        border-radius 50%
+        cursor pointer
+        img
+            width 9px
+            height 16px
+            margin-right 2px
+        &--right
+            transform rotate(180deg)
+
+.pagination
+    display flex
+    justify-content center
+    margin-bottom 20px
+    &__elem
+        width 42px
+        height 42px
+        border-radius 50%
+        display flex
+        justify-content center
+        align-items center
+        border 2px dashed gray
+        margin 0 27px
+        cursor pointer
+        transition all 0.2s ease-in-out
+        position relative
+        &:first-child::before
+             border-top none
+        &::before
+            transition all 0.3s ease-in-out
+            content ''
+            position absolute
+            top 18px
+            left -45px
+            width 34px
+            border-top 2px dotted gray
+        &--active
+            border 2px solid mid-blue
+            box-shadow inset 0 0 0 3px mid-blue
+        &:hover
+            border 2px solid mid-blue
+            box-shadow inset 0 0 0 3px mid-blue
+            span
+                color black 
+            &::before
+                border-top 2px dotted mid-blue
+        span
+            color gray
+            font 16px/38px 'Neumann', sans-serif
+            transition all 0.3s ease-in-out
+        

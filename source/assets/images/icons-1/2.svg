@@ -1,0 +1,42 @@
+<svg version="1.1" class="svg-item item-advantages-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<g>
+	<line class="st0" x1="33" y1="34" x2="33" y2="9"></line>
+	<path class="st0" d="M29,21"></path>
+	<path class="st0" d="M28,9h5.2V7c0-3.3-2.7-6-6-6H22v2C22,6.3,24.7,9,28,9z"></path>
+	<g>
+		<rect x="29" y="34" class="st0" width="27" height="29"></rect>
+		<rect x="13" y="34" class="st0" width="16" height="29"></rect>
+		<path class="st0" d="M56,34l5-5v-2c-0.8-0.8-1.2-1.2-2-2H47c-0.8,0.8-1.2,1.2-2,2v2l-5,5"></path>
+		<polyline class="st0" points="13,34 3,24 3,21 18,21 		"></polyline>
+		<path class="st0" d="M28,34l-5-5v-2c-0.8-0.8-1.2-1.2-2-2H10c-0.8,0.8-1.2,1.2-2,2v2"></path>
+	</g>
+	<path class="st0" d="M38.2,15H33v-2c0-3.3,2.7-6,6-6h5.2v2C44.2,12.3,41.5,15,38.2,15z"></path>
+	<path class="st0" d="M28,20h5.2v-2c0-3.3-2.7-6-6-6H22v2C22,17.3,24.7,20,28,20z"></path>
+	<path class="st0" d="M38.2,26H33v-2c0-3.3,2.7-6,6-6h5.2v2C44.2,23.3,41.5,26,38.2,26z"></path>
+	<line class="st0" x1="20" y1="21" x2="22" y2="21"></line>
+	<line class="st0" x1="36" y1="46" x2="50" y2="46"></line>
+	<line class="st0" x1="36" y1="50" x2="50" y2="50"></line>
+	<line class="st0" x1="0" y1="63" x2="14" y2="63"></line>
+	<line class="st0" x1="52" y1="63" x2="64" y2="63"></line>
+	<g>
+		<g>
+			<path class="st0" d="M58,11.3L58,11.3L58,11.3c0-2.2-1.8-4-4-4l0,0c-2.2,0-4,1.8-4,4l0,0c-2.2,0-4,1.8-4,4"></path>
+		</g>
+		<g>
+			<path class="st0" d="M63,15.3L63,15.3L63,15.3c0-2.2-1.8-4-4-4l0,0c-2.2,0-4,1.8-4,4l0,0"></path>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st0" d="M15,5.3L15,5.3L15,5.3c0-2.2-1.8-4-4-4l0,0c-2.2,0-4,1.8-4,4l0,0c-2.2,0-4,1.8-4,4"></path>
+		</g>
+		<g>
+			<path class="st0" d="M20,9.3L20,9.3L20,9.3c0-2.2-1.8-4-4-4l0,0c-2.2,0-4,1.8-4,4l0,0"></path>
+		</g>
+	</g>
+	<line class="st0" x1="9" y1="14.3" x2="17" y2="14.3"></line>
+	<line class="st0" x1="7" y1="14.3" x2="5" y2="14.3"></line>
+	<line class="st0" x1="52" y1="20.3" x2="60" y2="20.3"></line>
+	<line class="st0" x1="50" y1="20.3" x2="48" y2="20.3"></line>
+</g>
+</svg>

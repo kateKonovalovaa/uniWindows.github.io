@@ -1,20 +1,107 @@
 .banner
-    background url(../../assets/images/bg-2.png) center no-repeat
-    // height 1000px
-    max-width 100%
-    background-size cover
+    background fixed url(../../assets/images/heading-bg.jpg) no-repeat
+    position relative
+    z-index 0
+    width 100%
+    padding-bottom 8%
+    padding-top 13%
     &__wrap
-        padding 290px 0 570px 
-    &__content 
-        max-width 420px
+        position relative
     &__title
+        color white
+        margin-bottom 18px
+        max-width 1120px
+        position relative
+        &::before
+            content ''
+            width 76px
+            height 2px
+            position absolute
+            top 42px
+            left -126px
+            background-color mid-blue
+    &__text
+        color white
+        font 21px/29px 'Museo Sans Light', sans-serif
+        margin-bottom 62px
+        max-width 520px
+    &__transition-img
+        position absolute
+        bottom -10px
+        left  0
+        z-index 2
+    &__advantages
+        margin-top: 80px;
+        list-style none
+    &__advantage
+        font 16px/1 'Neumann', sans-serif
+        color light-gray
         text-transform uppercase
+        margin 0 0 30px 25px
+        position relative
+        &::before
+            content url(../../assets/images/check.svg)
+            position absolute
+            top 50%
+            left -25px
+            transform translate(0, -50%)
+            height 16px
+            width 16px
+
+
+.production
+    position absolute
+    right 50px
+    bottom -160px
+    z-index 50
+    background url(../../assets/images/seven-bg.png) no-repeat
+    padding 60px 65px 0
+    box-sizing border-box
+    width 350px
+    height 374px
+    display flex
+    align-items center
+    flex-direction column
+    font 18px/52px 'Neumann', sans-serif
+    color dark-gray
+    text-transform uppercase
+    &__title
+        margin-top 14px
+        margin-bottom 10px
     &__subtitle
-        font-size 12px
-        font-weight 400
-        text-transform uppercase
-        line-height 1.2
-        color light-black
-        padding-left 7px
-        margin-top 15px
+        position relative
+        line-height 90%
+        &::before
+            content ''
+            width 20px
+            height 1px
+            background mid-gray
+            position absolute
+            right -34px
+            bottom 50%
+        &::after
+            content ''
+            width 20px
+            height 1px
+            background mid-gray
+            position absolute
+            left -34px
+            bottom 50%
+    &__price
+        font 50px/1 'Neumann', sans-serif
+        color mid-blue
+        text-shadow 0 8px 3px rgba(0, 0, 0, 0.1)
+        position relative
+        width 80%
+        margin-left 80px
+        span
+            position absolute
+            left -30px
+            top 60%
+            transform translateY(-50%)
+            font 14px/1 'Neumann', sans-serif
+            border-bottom 2px solid mid-blue
+            color dark-gray
+            text-transform uppercase
+            padding-bottom 4px
 

@@ -1,0 +1,48 @@
+mixin form-1()
+    section.form-1
+        .form-1__wrap.wrap
+            .form-1__main
+                h2.form-1__title.title-2 Дарим <br> энергосберегающее окно
+                .form-1__body
+                    .form-1__about.about
+                        .about__content
+                            span.about__btn
+                                .about__hidden
+                                    span Улица
+                                    h5 Препятствует
+                                    p попаданию холодного <br> воздуха с улицы
+                            span.about__btn
+                                .about__hidden
+                                    span В помещении
+                                    h5 Сохраняет
+                                    p комфортный для жильцов <br> микроклимат
+                        .form-1__img: img(src="")
+                    .form-1__action-form.action-form
+                        h3.action-form__title.title-3 Заполните форму
+                        p.action-form__text и узнайте подробности акции <br> в течение 15 минут
+                        form
+                            input.action-form__input.input(type="text" placeholder="Ваше имя" id="name")
+                            input.action-form__input.input(type="text" placeholder="Ваше имя" id="name")
+                            button.action-form__btn.btn-main Узнать условия акции
+                            .action-form__agree
+                                span.action-form__fake-checkbox
+                                span Я принимаю условия <br> передачи информации
+
+            .form-1__timer.timer
+                h4.timer__title До конца акции осталось:
+                .timer__counter-wrap
+                    .timer__elem
+                        span.timer__count 01
+                        span Дней
+                    .timer__colon :
+                    .timer__elem
+                        span.timer__count 01
+                        span Часа
+                    .timer__colon :
+                    .timer__elem
+                        span.timer__count 01
+                        span Минут
+                    .timer__colon :
+                    .timer__elem
+                        span.timer__count 01
+                        span Секунды
