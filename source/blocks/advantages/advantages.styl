@@ -1,23 +1,36 @@
 .advantages
-    background url(../../assets/images/advantages-bg.png) 50% 88% no-repeat
-    padding 122px 0 564px
+    background url(../../assets/images/advantages-bg.png) 50% 88% no-repeat bg
+    padding 222px 0 650px
     &__text
         font 18px/30px 'Museo Sans Light', sans-serif
         color gray
         text-align center
+        margin-top 30px
     &__list
         list-style none
-        display grid
-        grid-template-columns 1fr 1fr 1fr
-        grid-gap 32px
+        display flex
+        flex-wrap wrap
+        justify-content center
         margin-top 80px
+        margin-bottom 80px
+        @media (max-width 600px)
+            padding-top 200px
     &__bottom
         width 48%
         margin-right 0
         margin-left auto
+        @media (max-width 1000px)
+            width 70%
+            margin-right auto
     &__sale
         margin-bottom 60px
         position relative
+        @media (max-width 1000px)
+            background-color rgba(255, 255, 255, 0.95)
+            border-radius 10px
+            padding 20px
+            box-sizing border-box
+            box-shadow 0 0 18px 0 rgba(0, 0, 0, 0.1)
         &::before
             content url(../../assets/images/plus-icon.svg)
             width 47px
@@ -37,9 +50,19 @@
 .benefit
     margin-left 280px
     position relative
+    @media (max-width 1000px)
+        background-color rgba(255, 255, 255, 0.95)
+        border-radius 10px
+        padding 20px
+        box-sizing border-box
+        box-shadow 0 0 18px 0 rgba(0, 0, 0, 0.1)
+    @media (max-width 800px)
+        margin-left 150px
     &:first-child
         margin-bottom 46px
         margin-left 130px
+        @media (max-width 800px)
+            margin-left 50px
     &::before
             content url(../../assets/images/check.svg)
             width 16px
@@ -60,7 +83,6 @@
     font 18px/28px 'Neumann', sans-serif
     background: rgba(255, 255, 255, 0.5)
     width 302px
-    margin 0 auto 116px
     position relative
     padding 50px 0 54px
     box-shadow 0 0 18px 0 rgba(0, 0, 0, 0.1)
@@ -68,6 +90,7 @@
     flex-direction column
     align-items center
     justify-content center
+    margin 0 30px 60px
     &__title
         font 18px/28px 'Neumann', sans-serif
         text-transform uppercase
@@ -105,8 +128,8 @@
             top 50%
     &::before
         content ''
-        width calc(100% + 40px)
-        height calc(100% + 40px)
+        width calc(100% + 45px)
+        height calc(100% + 45px)
         position absolute
         left -24px
         top -24px

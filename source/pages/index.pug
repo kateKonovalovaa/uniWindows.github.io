@@ -10,11 +10,14 @@ include ../blocks/form-1/form-1.pug
 include ../blocks/form-2/form-2.pug
 include ../blocks/form-3/form-3.pug
 include ../blocks/additionally/additionally.pug
+include ../blocks/modal/modal.pug
 
 block title
     title uniWindows
 
 block pagecontent
+    +modal()
+
     +header()
 
     +banner()

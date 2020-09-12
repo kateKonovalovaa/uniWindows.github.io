@@ -11,11 +11,23 @@
     &__body
         display flex
         justify-content flex-end
+        @media (max-width 768px)
+            justify-content center
     &__man
         position absolute
         bottom -150px
         left -50px
         z-index 1
+        @media (max-width 1400px)
+            width 90%
+            img 
+                width 100%
+        @media (max-width 1170px)
+            width 110%
+            bottom -50px
+            left -350px
+        @media (max-width 768px)
+            display none
     &__transition-img
         position absolute
         bottom -10px
@@ -32,6 +44,8 @@
         color gray
         margin-bottom 60px
     .action-form
+        position relative
+        z-index 100
         width 488px
         height 604px
         padding 70px 66px 76px

@@ -1,7 +1,9 @@
 .steps
     position relative
+    background-color bg
     &__wrap
         width 100%
+        padding-bottom 80px
     display flex
     flex-direction column
     justify-content center
@@ -11,7 +13,7 @@
         width 100%
     &__transition-img
         position absolute
-        bottom -160px
+        bottom -155px
         right 0
         z-index 10
 .slider
@@ -25,10 +27,19 @@
         font 16px/24px 'Museo Sans Light', sans-serif
         color gray
     &__main
-        display flex
+        display: grid
+        grid-template-columns: 110px 1fr 110px
+        margin: 0 auto
+        @media (max-width 1320px)
+            grid-template-columns: 110px 600px 110px
+        @media (max-width 860px)
+            grid-template-columns: 60px 600px 60px
+        @media (max-width 750px)
+            grid-template-columns: calc(100vw - 50px)
+        @media (max-width 650px)
+            grid-template-columns: 600px
     &__slide-container
-        margin 0 auto
-        width 82%
+        max-width 900px
     &__content
         display flex
         flex-direction column
@@ -36,17 +47,50 @@
         text-align center
         .slider__title
             margin 50px 0 24px
+    &__slide
+        max-width:900px;/*Максимальная ширина при больших разрешениях*/
+        width:auto;/*Ширина в зависимости от разрешения экрана*/
+    &__img
+        min-height: 486px
+        position relative
+        max-width 900px 
+        width auto 
+        @media (max-width 1320px)
+            min-height: 386px
+        @media (max-width 750px)
+            min-height: 60vw
+            width 100%
+        @media (max-width 650px)
+            min-height: 327px
+        img
+            position absolute
+            bottom 0
+            max-width 900px
+            width auto 
     &__content--btn
         margin 56px auto 0
         width 82%
         display grid
         grid-template-columns 2fr 1fr
+        grid-gap: 20px
         align-items center
+        @media (max-width 1320px)
+            grid-template-columns 1fr
         button
             min-width 250px
             width 250px
+    &__left
+        @media (max-width 1320px)
+            display flex
+            flex-direction column
+            align-items center
+            text-align center
+    &__slide-btn
+        @media (max-width 1320px)
+            margin 0 auto
     &__btn-slide
-        margin-top 250px
+        position relative
+        margin-top 270px
         display flex
         align-items center
         justify-content center
@@ -56,12 +100,35 @@
         height 50px
         border-radius 50%
         cursor pointer
+        @media (max-width 750px)
+            display none
+        &:hover
+            transform translateX(-10%)
         img
             width 9px
             height 16px
             margin-right 2px
+        span
+            position absolute
+            top 70px
+            right 0
+            width 150px
+            font 16px/24px 'Neumann', sans-serif;
+            color gray
+            text-align right
+            @media (max-width 1000px)
+                display none
         &--right
-            transform rotate(180deg)
+            margin-left: auto
+            @media (max-width 750px)
+                right 0
+            img
+                transform rotate(180deg)
+            span
+                text-align left
+                left 0
+            &:hover
+                transform translateX(10%)
 
 .pagination
     display flex
@@ -77,10 +144,10 @@
         border 2px dashed gray
         margin 0 27px
         cursor pointer
-        transition all 0.2s ease-in-out
+        transition all 0.3s ease-in-out
         position relative
         &:first-child::before
-             border-top none
+            border-top 2px dotted transparent
         &::before
             transition all 0.3s ease-in-out
             content ''
@@ -89,9 +156,13 @@
             left -45px
             width 34px
             border-top 2px dotted gray
-        &--active
+        &.active
             border 2px solid mid-blue
             box-shadow inset 0 0 0 3px mid-blue
+            &::before
+                border-top 2px dotted mid-blue
+            &:first-child::before
+                border-top 2px dotted transparent
         &:hover
             border 2px solid mid-blue
             box-shadow inset 0 0 0 3px mid-blue
@@ -99,6 +170,8 @@
                 color black 
             &::before
                 border-top 2px dotted mid-blue
+            &:first-child::before
+                border-top 2px dotted transparent
         span
             color gray
             font 16px/38px 'Neumann', sans-serif

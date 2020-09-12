@@ -1,10 +1,13 @@
 .form-2
+
     background fixed url(../../assets/images/form-2-bg.jpg) center -300px no-repeat
     position relative
     z-index 0
     width 100%
-    padding-bottom 8%
-    padding-top 17%
+    padding-bottom 147px
+    padding-top 314px
+    @media (max-width 600px)
+        padding-top 200px
     &__wrap
         display flex
         position relative
@@ -12,9 +15,25 @@
         position absolute
         bottom 120px
         right 0
+
+        width 900px
+        @media (max-width 1200px)
+            width 700px
+        @media (max-width 950px)
+            display none
+        img 
+            width 100%
+    &__body
+        @media (max-width 950px)
+            justify-content center
     &__transition-img
         position absolute
         bottom -7px
+        right 0
+        z-index 10
+    &__transition-img-2
+        position absolute
+        top 0
         right 0
         z-index 10
     &__title
@@ -22,6 +41,8 @@
         text-align left
         position relative
         margin-bottom 30px
+        @media (max-width 500px)
+            text-align center
         &::before
             content ''
             width 76px
@@ -34,14 +55,21 @@
         font 18px/30px 'Museo Sans Light', sans-serif
         color gray
         margin-bottom 60px
+        @media (max-width 500px)
+            text-align center
     .action-form
         width 488px
         height 604px
         padding 70px 66px 76px
         box-sizing border-box
+        position relative
+        z-index 100
         background url(../../assets/images/form-bg-2.png) no-repeat
+        @media (max-width 950px)
+            margin 0 auto
         &__title
             margin-bottom 30px
+        
     .file-load
         margin 10px 0 16px
         display flex

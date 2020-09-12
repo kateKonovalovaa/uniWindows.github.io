@@ -3,7 +3,7 @@
 
 
 .wrap 
-    min-max(320px, 1140px, 10px)
+    min-max(320px, 1160px, 20px)
 
 
 li 
@@ -24,6 +24,8 @@ body
     max-width 1920px
     margin 0 auto
     color black
+    @media (max-width 650px)
+        min-width 650px
 
 h1, h2, h3, p
     margin 0
@@ -54,6 +56,13 @@ h1, h2, h3, p
 .title-2
     font 60px/72px 'Neumann', sans-serif
     text-align center
+    @media (max-width 768px)
+        font-size 45px
+        line-height 60px
+    @media (max-width 500px)
+        font-size 36px
+        line-height 46px
+        text-align center
 
 .title-3
     font 400 30px/1 'Neumann', sans-serif
@@ -85,6 +94,25 @@ h1, h2, h3, p
 
 .input
     height 80px
+    padding 0px 42px
+    box-sizing border-box
+    width 100%
+    background-color smoke-white
+    font 16px/1 'Museo Sans Regular', sans-serif
+    color black
+    border-radius 40px
+    box-shadow none
+    appearance none
+    border none
+    outline none
+    transition all 0.2s
+    &:hover
+        background-color darken(smoke-white, 1)
+    &::placeholder
+        font 16px/1 'Museo Sans Regular', sans-serif
+        color gray
+
+.textarea
     padding 0px 42px
     box-sizing border-box
     width 100%

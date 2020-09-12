@@ -1,24 +1,53 @@
 .form-1
     padding 120px 0 100px
-    background url(../../assets/images/form-1-bg.png)
+    background url(../../assets/images/form-1-bg.png) bg
+    @media (max-width 1070px)
+        overflow-x hidden
+    @media (max-width 768px)
+        padding-top 220px
     &__body
         display flex
         justify-content space-between
         width 90%
-        margin-right 0
-        margin-left auto
+        margin-right: -50px
+        @media (max-width 1070px)
+            flex-direction column
+            align-items center
+
+            width 100%
     &__title
         margin-bottom 42px
+    &__img
+        width: 100%;
+        height: 100%;
 
+        background url(../../assets/images/window.png) no-repeat
+        background-size contain
+        @media (max-width 1070px)
+           width 500px
+        @media (max-width 768px)
+            width 90%
+        @media (max-width 500px)
+            width 80%
+        
 
 .about
     position relative
-    width 50%
-    &::after
-        position absolute
-        content url(../../assets/images/window.png)
-        height 100%
-        padding-bottom 23%
+    width 60%
+    @media (max-width 1070px)
+        width 500px
+        height 600px
+
+        margin-right -50px
+    @media (max-width 640px)
+        margin-right -250px
+    @media (max-width 500px)
+        margin-right -200px
+    // &::after
+    //     position absolute
+    //     content url(../../assets/images/window.png)
+    //     height 100%
+    //     padding-bottom 23%
     &__btn
         width 46px
         height 46px
@@ -28,7 +57,7 @@
         display inline-block
         box-shadow 0px 5px 20px 0px rgba(0, 0, 0, 0.2)
         top 230px
-        right 160px
+        right 230px
         z-index 5
         &::before
             content ''
@@ -62,6 +91,7 @@
         padding 70px 60px 50px
         box-sizing border-box
         background url(../../assets/images/about-window-bg.png) no-repeat
+        display: none
         span
             font 12px/1 'Museo Sans Black', sans-serif
             color gray
@@ -77,7 +107,7 @@
             color gray
 
 .action-form
-    width 460px
+    width 490px
     height auto
     padding 70px 66px 106px;
     box-sizing border-box
@@ -131,6 +161,11 @@
         align-items center
         justify-content center
         margin 0 auto
+        @media (max-width 640px)
+            display grid
+            grid-template-columns 1fr 30px 1fr
+
+            width 60%
     &__elem
         width 142px
         height 174px
@@ -146,6 +181,11 @@
         font 60px/1 'Neumann', sans-serif
         color black
         padding-bottom 40px
+        @media (max-width 640px)
+            width 30px
+            text-align center
+            &:nth-child(4)
+                display none
     &__count
         margin-top 40px
         margin-bottom 5px
