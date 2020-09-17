@@ -1,39 +1,79 @@
-$(function(){
-    const slider = $('.slider__slide-container').owlCarousel({
-        loop: true,
-        nav: false,
-        margin: 50,
-        items: 1,
-        smartSpeed: 700,
-        dotsContainer: '.pagination',
-        dotsEach: true
+$(function() {
+    $("#tel").mask("+7(999) 999-9999");
+
+    const ajaxSend = (url, formData, callback) => {
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', 
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(response => callback())
+            .catch(error => console.error(error))
+    };
+   
+
+    $('.modal__form').submit(function(e){
+        
+        e.preventDefault();
+
+        let name = $('[name="name"]');
+        name.val(name.val().trim());
+        let tel = $('[name="tel"]')
+
+        if(name.val().length < 3) {
+            name.addClass('error')
+            name.one('focus', function(e){
+                name.removeClass('error')
+            })
+            return false
+        } else if(tel.val().length < 12) {
+            tel.addClass('error')
+            tel.one('focus', function(){
+                tel.removeClass('error')
+            })
+            return false
+        }
+
+        let form = $('#modal__form')[0];
+        let formData = new FormData(form);
+        formData = Object.fromEntries(formData);
+        console.log(JSON.stringify(formData))
+        
+        let url = 'http://localhost:3000/request';
+        ajaxSend(url, formData, function(){
+            $('.modal__body').css('animation', 'fade-out 0.7s');
+            $('.modal__bg').fadeOut();
+            setTimeout(() => {
+                $('.modal').css('display', 'none');
+            }, 700);
+            $('input').val('');
+        });
+        form.reset();
+
+        // $.ajax({
+        //     url: 'http://localhost:3000/request',
+        //     method: 'POST',
+        //     data: formData,
+
+        // }).done(function(data){
+        //     console.log('окей')
+        // })
     })
 
-    const prevBtn = $('.slider__btn-slide--left');
-    const nextBtn = $('.slider__btn-slide--right');
-
-    $('.pagination__elem').click(function(){
-        slider.trigger('to.owl.carousel', [$(this).index(), 1000])
+    $('.header__call').click(function(){
+        $('.modal').css('display', 'block')
+        $('.modal__bg').fadeIn();
+        $('.modal__body').css('animation', 'fade-in 0.7s ease');
     })
 
-    prevBtn.click(function(){
-        slider.trigger("prev.owl.carousel");
+    $('.modal__close').click(function(){
+        $('.modal__body').css('animation', 'fade-out 0.7s');
+        $('.modal__bg').fadeOut();
+        setTimeout(() => {
+            $('.modal').css('display', 'none');
+        }, 700);
+        $('input').val('');
     })
-
-    nextBtn.click(function(){
-        slider.trigger("next.owl.carousel");
-    })
-
-    const btnTitles = ['Доставляем и устанавливаем','Заявка', 'Расчет цены за 15 минут', 'Бесплатный замер на объекте', 'Оформляем документы у Вас дома', 'Изготавливаем от 7 дней', 'Доставляем и устанавливаем', 'Заявка']
-
-    var prevTitle = $('.slider__btn-slide--left span')
-    const nextTitle = $('.slider__btn-slide--right span')
-
-    slider.on('changed.owl.carousel', function(e) {
-        const index = e.item.index - 2
-        console.log(index)
-        prevTitle.text(btnTitles[index-1])
-        nextTitle.text(btnTitles[index+1])
-    })
-
 })

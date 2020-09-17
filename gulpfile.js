@@ -8,7 +8,7 @@ const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglifyjs');
+// const uglify = require('uglify-js-es6').default;
 const cache = require('gulp-cache');
 const pngquant = require('imagemin-pngquant');
 const imagemin = require('gulp-imagemin');
@@ -69,7 +69,7 @@ gulp.task('scripts', () => {
             './source/assets/js/*.js'
         ])
         .pipe(concat('libs.min.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest('./public/assets/js'))
 });
 

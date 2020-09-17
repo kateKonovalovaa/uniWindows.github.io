@@ -2,15 +2,24 @@
     position fixed
     top 0
     left 0
+    bottom 0
+    right 0
+    margin auto
+    overflow-y auto
+    overflow-x hidden
     width 100vw
-    height 100vh
     z-index 500
+    display: none
+    &__wrap
+        position relative
     &__bg
         position absolute
-        top 0
+        top -100px
         left 0
+        bottom 0
+        right 0
         width 100vw
-        height 100vh
+        height calc(100% + 200px)
         background-color black
         opacity 0.9
         z-index 600
@@ -18,3 +27,96 @@
         background: url(../../assets/images/modal-bg.png) no-repeat
         position relative
         z-index 700
+        padding 80px 60px 114px
+        box-sizing border-box
+        width 854px
+        margin 100px auto 100px
+    &__text
+        margin-top 30px
+        font-size 16px
+        text-align center
+    &__title
+        line-height 64px
+    &__form
+        margin-top 40px
+    &__close
+        position absolute
+        top 30px
+        right 40px
+        display flex
+        justify-content center
+        align-items center
+        height 48px
+        width 48px
+        border-radius 24px
+        background-color bg
+        cursor pointer
+        transition all 0.3s
+        &:hover
+            background-color mid-blue
+    
+
+.modal-form
+    &__col-2
+        display grid
+        grid-template-columns 1fr 1fr
+        grid-gap 30px
+    &__textarea
+        height 220px
+        margin 30px 0
+        padding-top: 35px 
+        padding-bottom: 20px
+    &__btn
+        margin 0 auto 30px
+    &__agree
+        display flex
+        justify-content center
+    &__checkbox
+        position relative
+        display inline-block
+        width 17px
+        height 17px
+        margin-right 8px
+        border-radius 2px
+        border 1px solid light-gray
+        cursor pointer
+        input
+            opacity 0
+            margin 0
+            width 17px
+            height 17px
+            z-index 10
+            position absolute
+            cursor pointer
+        input:checked ~ .modal-form__fake-checkbox
+            opacity 1
+    &__fake-checkbox
+        position absolute
+        background url('../../assets/images/checkbox-bg-light.png') 50% 50% no-repeat
+        width 17px
+        height 17px
+        opacity 0
+        transition all 0.3s
+
+
+@keyframes fade-in 
+  0% {
+    opacity 0
+    transform scale(0.4)
+  }
+  
+  100% {
+    opacity 1
+    transform scale(1)
+  }
+
+@keyframes fade-out
+  0% {
+    opacity 1
+    transform scale(1)
+  }
+  
+  100% {
+    opacity 0
+    transform scale(0.4)
+  }

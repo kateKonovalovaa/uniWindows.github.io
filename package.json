@@ -28,12 +28,16 @@
         "gulp-pug": "^3.3.0",
         "gulp-rename": "^1.2.2",
         "gulp-stylus": "^2.6.0",
-        "gulp-uglifyjs": "^0.6.2",
+        "uglify-js-es6": "^2.8.9",
         "imagemin-pngquant": "^5.0.1",
         "pug": "^2.0.0-rc.4"
     },
     "bugs": {
         "url": ""
     },
-    "homepage": ""
+    "homepage": "",
+    "dependencies": {
+        "json-server": "^0.16.1",
+        "uglify-js-es6": "^2.8.9"
+    }
 }
