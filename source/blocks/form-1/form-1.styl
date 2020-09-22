@@ -48,6 +48,14 @@
     //     content url(../../assets/images/window.png)
     //     height 100%
     //     padding-bottom 23%
+    &__elem
+        position relative
+        &:first-child .about__btn
+            top 130px
+            left 180px
+        &:last-child .about__hidden
+            top 300px
+            left 10px
     &__btn
         width 46px
         height 46px
@@ -79,13 +87,10 @@
             transform translate(-50%, -50%)
             color white
             cursor pointer
-        &:first-child
-            top 130px
-            left 180px
     &__hidden
         position absolute
-        top 60px
-        left -265px
+        top 190px
+        left -85px
         height 256px
         width 366px
         padding 70px 60px 50px

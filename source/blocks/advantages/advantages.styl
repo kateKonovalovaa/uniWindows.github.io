@@ -6,11 +6,13 @@
         color gray
         text-align center
         margin-top 30px
+    &__wrap
+        max-width 1170px
     &__list
         list-style none
         display flex
         flex-wrap wrap
-        justify-content center
+        justify-content space-between
         margin-top 80px
         margin-bottom 80px
         @media (max-width 600px)
@@ -128,8 +130,8 @@
             top 50%
     &::before
         content ''
-        width calc(100% + 45px)
-        height calc(100% + 45px)
+        width calc(100% + 40px)
+        height calc(100% + 40px)
         position absolute
         left -24px
         top -24px
