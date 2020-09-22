@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <title>uniWindows</title>
+  </head>
+  <body>
+    <section class="modal">
+      <div class="modal__wrap">
+        <div class="modal__body">
+          <h2 class="modal__title title-2">Закажите <br> консультацию</h2>
+          <p class="modal__text text">Ответ в течение 15 минут</p>
+          <form class="modal__form modal-form" method="POST" id="modal__form">
+            <div class="modal-form__col-2">
+              <input class="modal-form__input input" type="text" placeholder="Ваше имя" id="name" name="name"/>
+              <input class="modal-form__input input" type="text" placeholder="Ваш телефон" id="tel" name="tel"/>
+            </div>
+            <textarea class="modal-form__textarea textarea" placeholder="Ваш вопрос" id="answer" name="answer"></textarea>
+            <button class="modal-form__btn btn-main">Позвоните мне</button>
+            <div class="modal-form__agree">
+              <div class="modal-form__checkbox">
+                <input type="checkbox" checked="checked"/>
+                <div class="modal-form__fake-checkbox"></div>
+              </div><span class="text">Я принимаю условия передачи информации</span>
+            </div>
+          </form>
+          <div class="modal__close"><img src="../../assets/images/close.png"/></div>
+        </div>
+        <div class="modal__bg"></div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="header__wrap wrap">
+        <div class="header__left"><a class="header__logo" href="#"><img src="../assets/images/logo.png"/></a>
+          <p class="header__logo-text">Мы, компания "UniWindows", сделаем выбор окон легким, а процесс установки максимально комфортным.</p>
+        </div>
+        <div class="header__contacts">
+          <div class="header__phone phone"><span class="phone__btn"><img class="phone__icon" src="../assets/images/phone.svg"/></span><span class="phone__num" href="tel:+74951500579"> 8 (495) 150-05-79</span></div>
+          <div class="header__office-hours office-hours"><img class="office-hours__icon" src="../assets/images/clock.svg"/>
+            <ul class="office-hours__elems">
+              <li class="office-hours__hours">Пн. - пт.: с 9:00 до 20:00</li>
+              <li class="office-hours__hours">Сб. - вс: с 10:00 до 18:00</li>
+            </ul>
+          </div><span class="header__call btn-link">заказать звонок</span>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner__bg"></div>
+      <div class="banner__wrap wrap">
+        <div class="banner__content"> 
+          <h1 class="banner__title title-1">Надежные пластиковые окна</h1>
+          <p class="banner__text">Сэкономьте Ваше время и бюджет с оперативным решением задач без посредников.</p>
+          <button class="banner__btn btn-main">смотреть продукцию</button>
+          <ul class="banner__advantages">
+            <li class="banner__advantage">НЕМЕЦКИЕ ПРОФИЛЬНЫЕ СИСТЕМЫ ОТ ПРОИЗВОДИТЕЛЯ</li>
+            <li class="banner__advantage">УСТАНОВКА ОКОН ПО ГОСТ</li>
+            <li class="banner__advantage">СРОК СЛУЖБЫ ОКОН 50 ЛЕТ</li>
+            <li class="banner__advantage">Опыт работы на окнонном рынке 10 лет</li>
+          </ul>
+        </div>
+        <div class="banner__production production"><span class="production__title">изготовление</span><span class="production__price"><span> от </span>3480</span><span class="production__meter">за м <sup>2</sup></span><span class="production__subtitle">рублей</span></div>
+      </div>
+      <div class="banner__transition-img"><img src="../../assets/images/form-1-top.png"/></div>
+    </section>
+    <section class="form-1">
+      <div class="form-1__wrap wrap">
+        <div class="form-1__main">
+          <h2 class="form-1__title title-2">Дарим <br> энергосберегающее окно</h2>
+          <div class="form-1__body">
+            <div class="form-1__about about">
+              <div class="about__content">
+                <div class="about__elem"><span class="about__btn" id="about-1"></span>
+                  <div class="about__hidden"><span>Улица</span>
+                    <h5>Препятствует</h5>
+                    <p>попаданию холодного <br> воздуха с улицы</p>
+                  </div>
+                </div>
+                <div class="about__elem"><span class="about__btn" id="about-2"></span>
+                  <div class="about__hidden"><span>В помещении</span>
+                    <h5>Сохраняет</h5>
+                    <p>комфортный для жильцов <br> микроклимат</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-1__img"><img src=""/></div>
+            </div>
+            <div class="form-1__action-form action-form">
+              <h3 class="action-form__title title-3">Заполните форму</h3>
+              <p class="action-form__text">и узнайте подробности акции <br> в течение 15 минут</p>
+              <form>
+                <input class="action-form__input input" type="text" placeholder="Ваше имя" id="name"/>
+                <input class="action-form__input input" type="text" placeholder="Ваше имя" id="name"/>
+                <button class="action-form__btn btn-main">Узнать условия акции</button>
+                <div class="action-form__agree"><span class="action-form__fake-checkbox"></span><span>Я принимаю условия <br> передачи информации</span></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="form-1__timer timer">
+          <h4 class="timer__title">До конца акции осталось:</h4>
+          <div class="timer__counter-wrap">
+            <div class="timer__elem"><span class="timer__count timer__count--days">01</span><span>Дней</span></div>
+            <div class="timer__colon">:</div>
+            <div class="timer__elem"><span class="timer__count timer__count--hours">01</span><span>Часа</span></div>
+            <div class="timer__colon">:</div>
+            <div class="timer__elem"><span class="timer__count timer__count--min">01</span><span>Минут</span></div>
+            <div class="timer__colon">:</div>
+            <div class="timer__elem"><span class="timer__count timer__count--sec">01</span><span>Секунды</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="variant">
+      <div class="variant__bg-wrap">
+        <div class="variant__wrap wrap">
+          <div class="variant__content"> 
+            <h2 class="variant__title title-2">Выберите интересующий Вас вариант оконного изделия</h2>
+            <div class="variant__body">
+              <div class="variant__elem">
+                <h3 class="variant__subtitle title-3">Двустворчатое окно</h3>
+                <div class="variant__img"><img src="../../assets/images/1.png"/>
+                  <div class="variant__price price-item">стоимость от <span class="price-item__price">3 480 руб.</span></div>
+                </div>
+                <p class="variant__text subtitle">Одна створка глухая, <br/> одна поворотно-откидная.</p>
+                <button class="variant__btn btn-main">Рассчитать стоимость</button>
+              </div>
+              <div class="variant__elem">
+                <h3 class="variant__subtitle title-3">Трехcтворчатое окно</h3>
+                <div class="variant__img"><img src="../../assets/images/2.png"/>
+                  <div class="variant__price price-item">стоимость от <span class="price-item__price">4 860 руб</span></div>
+                </div>
+                <p class="variant__text subtitle">Две глухие створки, <br/> одна поворотно-откидная.</p>
+                <button class="variant__btn btn-main">Рассчитать стоимость</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form-2">
+      <div class="form-2__wrap wrap">
+        <div class="form-2__main">
+          <h2 class="form-2__title title-2">У Вас уже есть предложение от <br> другой компании?</h2>
+          <p class="form-2__text">Пришлите его нам и мы обязательно  <br> сделаем Вам более выгодное предложение.</p>
+          <div class="form-2__body">
+            <div class="form-2__action-form action-form">
+              <h3 class="action-form__title title-3">Отправить</h3>
+              <input class="action-form__input input" type="text" placeholder="Ваше имя" id="name"/>
+              <input class="action-form__input input" type="text" placeholder="Ваш телефон" id="phone"/>
+              <div class="action-form__file-load file-load"><img class="file-load__img" src="../../assets/images/file.svg"/>
+                <label class="file-load__label" for="fileLoad"><span class="file-load__btn btn-link">загрузите документ</span><span class="file-load__text--light">(файл не более 2 Мб)</span></label>
+              </div>
+              <button class="action-form__btn btn-main">Получить выгодное предложение</button>
+              <div class="action-form__agree"><span class="action-form__fake-checkbox"></span><span>Я принимаю условия передачи <br> информации</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-2__man"><img src="../../assets/images/man.png"/></div>
+      <div class="form-2__transition-img"><img src="../../assets/images/advantages-top.png"/></div>
+      <div class="form-2__transition-img-2"><img src="../../assets/images/choice-bottom.png"/></div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrap wrap">
+        <div class="advantages__top">
+          <h2 class="advantages__title title-2">Производим качественные окна <br> из профилей мировых брендов</h2>
+          <p class="advantages__text text">Работаем с брендами только проверенных профильных систем Rehau, VEKA <br> и предоставляем качественное гарантийное обслуживание по договору.</p>
+          <ul class="advantages__list">
+            <li class="advantages__list-elem advantage">
+              <h4 class="advantage__title">сотрудничества <br> с производителями</h4><span class="advantage__num">10</span><span class="advantage__text">лет</span>
+            </li>
+            <li class="advantages__list-elem advantage">
+              <h4 class="advantage__title">гарантии <br> на конструкции</h4><span class="advantage__num">5</span><span class="advantage__text">лет</span>
+            </li>
+            <li class="advantages__list-elem advantage">
+              <h4 class="advantage__title">гарантии <br> на монтаж</h4><span class="advantage__num">3</span><span class="advantage__text">года</span>
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__bottom">
+          <div class="advantages__sale"><span class="advantages__sale-title">3% СКИДКА</span><span class="advantages__sale-subtitle">пенсионерам и молодоженам</span></div>
+          <ul class="advantages__benefits">
+            <li class="advantages__benefit benefit">
+              <h4 class="benefit__title">СЕРВИС</h4><span class="benefit__text">бесплатное обслуживание <br> в течение гарантийного срока</span>
+            </li>
+            <li class="advantages__benefit benefit">
+              <h4 class="benefit__title">ДОГОВОР</h4><span class="benefit__text">оформляется оперативно <br> у Вас дома после замера</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="steps__wrap wrap">
+        <div class="steps__main">
+          <h2 class="steps__title title-2">Обеспечиваем ответственное <br> сопровождение от заявки <br> до монтажа</h2>
+          <div class="steps__slider slider">
+            <div class="slider__pagination pagination">
+              <div class="pagination__elem"><span>1</span></div>
+              <div class="pagination__elem"><span>2</span></div>
+              <div class="pagination__elem"><span>3</span></div>
+              <div class="pagination__elem"><span>4</span></div>
+              <div class="pagination__elem"><span>5</span></div>
+              <div class="pagination__elem"><span>6</span></div>
+            </div>
+            <div class="slider__main">
+              <div class="slider__btn-slide slider__btn-slide--left"><img src="../assets/images/arrow.svg"/><span>Доставляем и устанавливаем</span></div>
+              <div class="slider__slide-container owl-carousel own-theme">
+                <div class="slider__slide">
+                  <div class="slider__img"><img src="../assets/images/1.webp"/></div>
+                  <div class="slider__content--btn">
+                    <div class="slider__left">
+                      <h3 class="slider__title">Заявка</h3>
+                      <p class="slider__text">Вы оставляете заявку и в течение 15 минут Вам <br> перезванивает наш менеджер. Если он перезвонит позже <br> c нас скидка 10%</p>
+                    </div>
+                    <button class="slider__slide-btn btn-main">оставить заявку</button>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="slider__img"><img src="../assets/images/2.webp"/></div>
+                  <div class="slider__content">
+                    <h3 class="slider__title">Расчет цены за 15 минут</h3>
+                    <p class="slider__text">После того, как менеджер узнает о Ваших пожеланиях, <br> он производит расчет стоимости в течение 15 минут.</p>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="slider__img"><img src="../assets/images/3.webp"/></div>
+                  <div class="slider__content">
+                    <h3 class="slider__title">Бесплатный замер на объекте</h3>
+                    <p class="slider__text">Главный инженер выезжает на замер в заранее <br> оговоренные время и день с образцами и дает <br>  дополнительую консультацию по проекту.</p>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="slider__img"><img src="../assets/images/4.webp"/></div>
+                  <div class="slider__content">
+                    <h3 class="slider__title">Оформляем документы у Вас дома</h3>
+                    <p class="slider__text">Мы отправляем на замер только компетентное и юридически ответственное лицо, <br> которое грамотно составит договор, проект и смету с соблюдением всех нюансов <br> в комфортной для Вас обстановке.</p>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="slider__img"><img src="../assets/images/5.webp"/></div>
+                  <div class="slider__content">
+                    <h3 class="slider__title">Изготавливаем от 7 дней</h3>
+                    <p class="slider__text">Подбираем соответствующие профильные системы и изготавливаем <br>  изделие по индивидуальным параметрам Вашего оконного проема.</p>
+                  </div>
+                </div>
+                <div class="slider__slide">
+                  <div class="slider__img"><img src="../assets/images/6.webp"/></div>
+                  <div class="slider__content">
+                    <h3 class="slider__title">Доставляем и устанавливаем</h3>
+                    <p class="slider__text">Наши специалисты доставляют готовое окно на Ваш объект, <br> осуществляют монтаж и сдают Вам акты выполненых работ.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__btn-slide slider__btn-slide--right"><img src="../assets/images/arrow.svg"/><span>Расчет цены за 15 минут</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="steps__transition-img"><img src="../../assets/images/step-bottom.png"/></div>
+    </section>
+    <section class="form-3">
+      <div class="form-3__wrap wrap">
+        <h2 class="form-3__title">Закажите бесплатный <br> выезд специалиста</h2>
+        <div class="form-3_main">
+          <div class="form-3__body">
+            <div class="form-3__action-form action-form">
+              <h3 class="action-form__title title-3">Оставьте заявку</h3>
+              <p class="action-form__text">на выезд инженера с каталогами образцов для обсуждения проекта и составления сметы.</p>
+              <input class="action-form__input input" type="text" placeholder="Ваше имя" id="name"/>
+              <input class="action-form__input input" type="text" placeholder="Ваш телефон" id="phone"/>
+              <button class="action-form__btn btn-main">Получить выгодное предложение</button>
+              <div class="action-form__agree"><span class="action-form__fake-checkbox"></span><span>Я принимаю условия передачи <br> информации</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-3__man"><img src="../../assets/images/man-2.png"/></div>
+      <div class="form-3__transition-img"><img src="../../assets/images/form-3-bottom.png"/></div>
+    </section>
+    <div class="additionally">
+      <div class="additionally__wrap wrap">
+        <h2 class="additionally__title title-2">Выполняем дополнительные <br> и комплексные ремонтные работы</h2>
+        <div class="additionally__elems">
+          <div class="additionally__elem additionally__elem--left">
+            <div class="additionally__main">
+              <h3 class="additionally__subtitle">Оформление <br> откосов</h3>
+              <div class="additionally__hidden">
+                <h3 class="additionally__subtitle additionally__subtitle--hidden">Оформление <br> откосов</h3>
+                <p class="additionally__text">Аккуратно заделаем откосы после монтажа, чтобы обеспечить нужный микроклимат и сохранить гармонию интерьера в помещении.</p>
+              </div>
+            </div>
+          </div>
+          <div class="additionally__elem additionally__elem--left">
+            <div class="additionally__main">
+              <h3 class="additionally__subtitle">Установка <br> подоконников</h3>
+              <div class="additionally__hidden">
+                <h3 class="additionally__subtitle additionally__subtitle--hidden">Установка <br> подоконников</h3>
+                <p class="additionally__text">Наши специалисты установят классические подоконники после монтажа.</p>
+              </div>
+            </div>
+          </div>
+          <div class="additionally__elem additionally__elem--right">
+            <div class="additionally__main">
+              <h3 class="additionally__subtitle">Установка <br> москитных сеток</h3>
+              <div class="additionally__hidden">
+                <h3 class="additionally__subtitle additionally__subtitle--hidden">Установка <br> москитных сеток</h3>
+                <p class="additionally__text">Предлагаем на выбор и устанавливаем сетки для защиты от насекомых - рамочные, раздвижные, рулонные, сетки на липучке и сетки-плиссе.</p>
+              </div>
+            </div>
+          </div>
+          <div class="additionally__elem additionally__elem--right">
+            <div class="additionally__main">
+              <h3 class="additionally__subtitle">Комплексная <br> отделка балкона</h3>
+              <div class="additionally__hidden">
+                <h3 class="additionally__subtitle additionally__subtitle--hidden">Комплексная <br> отделка балкона</h3>
+                <p class="additionally__text">Готовы с нуля сделать крышу, парапет, поставить остекление, утеплить пол, обшить сайдингом, ПВХ панелью и выполнить другие необходимые работы.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="additionally__btn btn-main">узнать стоимость работ</button>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/libs.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+  </body>
+</html>
