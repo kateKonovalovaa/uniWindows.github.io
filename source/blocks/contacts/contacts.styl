@@ -1,0 +1,55 @@
+.contacts
+    position relative
+
+    height 744px
+    &__wrap
+        display flex
+        justify-content space-between
+        align-items center
+
+        height 744px
+    &__icon img
+        width 20px
+        height 24px
+
+        margin-right 20px
+    &__adress
+        display flex
+        h4  
+            margin 0
+            font 300 16px/24px 'Museo Sans Light', Helvetica, sans-serif
+            color gray
+        adress
+            font 500 16px/24px 'Museo Sans Medium', Helvetica, sans-serif
+    &__office-hours
+        justify-content flex-start !important
+        li
+            color gray
+        i 
+            margin-right 20px
+    &__content
+        position relative
+        z-index 100
+
+        width 514px
+        height 284px
+
+        padding 76px 70px 0 75px
+        box-sizing border-box
+
+        background url(../../assets/images/map-item-bg.png) no-repeat
+    &__map
+        position absolute
+        top 0
+        left 0
+
+        width 100%
+        height 100%
+    &__transition-img
+        position absolute
+        top 0
+        left  0
+        z-index 2
+        overflow-x hidden
+        img 
+            width 100%

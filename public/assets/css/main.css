@@ -30,6 +30,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   color: #1d1c21;
+  overflow-x: hidden;
 }
 @media (max-width: 650px) {
   body {
@@ -849,6 +850,78 @@ p {
   color: #37363a;
   text-transform: uppercase;
   padding-bottom: 4px;
+}
+.contacts {
+  position: relative;
+  height: 744px;
+}
+.contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 744px;
+}
+.contacts__icon img {
+  width: 20px;
+  height: 24px;
+  margin-right: 20px;
+}
+.contacts__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts__adress h4 {
+  margin: 0;
+  font: 300 16px/24px 'Museo Sans Light', Helvetica, sans-serif;
+  color: #9b9892;
+}
+.contacts__adress adress {
+  font: 500 16px/24px 'Museo Sans Medium', Helvetica, sans-serif;
+}
+.contacts__office-hours {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+.contacts__office-hours li {
+  color: #9b9892;
+}
+.contacts__office-hours i {
+  margin-right: 20px;
+}
+.contacts__content {
+  position: relative;
+  z-index: 100;
+  width: 514px;
+  height: 284px;
+  padding: 76px 70px 0 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url("../../assets/images/map-item-bg.png") no-repeat;
+}
+.contacts__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contacts__transition-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow-x: hidden;
+}
+.contacts__transition-img img {
+  width: 100%;
 }
 .footer {
   display: block;

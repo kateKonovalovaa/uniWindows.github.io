@@ -19,9 +19,9 @@ $(function () {
 
   $('.modal__form').submit(function (e) {
     e.preventDefault();
-    var name = $('[name="name"]');
+    var name = $('.modal__form').find('[name="name"]');
     name.val(name.val().trim());
-    var tel = $('[name="tel"]');
+    var tel = $('.modal__form').find('[name="tel"]');
 
     if (name.val().length < 3) {
       name.addClass('error');
@@ -66,9 +66,10 @@ $(function () {
   $('.modal__close').click(function () {
     $('.modal__body').css('animation', 'fade-out 0.7s');
     $('.modal__bg').fadeOut();
+    $('.modal').find('input').val('');
+    $('.modal').find('input').removeClass('error');
     setTimeout(function () {
       $('.modal').css('display', 'none');
     }, 700);
-    $('input').val('');
   });
 });

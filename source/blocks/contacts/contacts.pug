@@ -1,0 +1,17 @@
+mixin contacts()
+    section.contacts
+        .contacts__wrap.wrap
+            .contacts__content
+                .contacts__adress
+                    i.contacts__icon: img(src="./assets/images/pin.svg")
+                    .contacts__block
+                        h4 Адрес офиса:
+                        adress г. Москва, ул. Маршала Бирюзова 2, этаж 2, офис 6.
+                .contacts__office-hours.office-hours
+                    i.office-hours__icon: img(src="./assets/images/clock.svg")
+                    ul.office-hours__elems
+                        li.office-hours__hours Пн. - пт.: с 9:00 до 20:00
+                        li.office-hours__hours Сб. - вс: с 10:00 до 18:00
+            .contacts__map(id="map")
+        .contacts__transition-img: img(src="../../assets/images/map-top.png")
+            

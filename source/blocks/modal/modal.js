@@ -18,9 +18,9 @@ $(function() {
         
         e.preventDefault();
 
-        let name = $('[name="name"]');
+        let name = $('.modal__form').find('[name="name"]');
         name.val(name.val().trim());
-        let tel = $('[name="tel"]')
+        let tel = $('.modal__form').find('[name="tel"]')
 
         if(name.val().length < 3) {
             name.addClass('error')
@@ -71,9 +71,10 @@ $(function() {
     $('.modal__close').click(function(){
         $('.modal__body').css('animation', 'fade-out 0.7s');
         $('.modal__bg').fadeOut();
+        $('.modal').find('input').val('');
+        $('.modal').find('input').removeClass('error');
         setTimeout(() => {
             $('.modal').css('display', 'none');
         }, 700);
-        $('input').val('');
     })
 })
