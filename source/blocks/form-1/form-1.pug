@@ -22,10 +22,10 @@ mixin form-1()
                     .form-1__action-form.action-form
                         h3.action-form__title.title-3 Заполните форму
                         p.action-form__text и узнайте подробности акции <br> в течение 15 минут
-                        form
-                            input.action-form__input.input(type="text" placeholder="Ваше имя" id="name")
-                            input.action-form__input.input(type="text" placeholder="Ваше имя" id="name")
-                            button.action-form__btn.btn-main Узнать условия акции
+                        form(id="form-1")
+                            input.action-form__input.input(type="text" placeholder="Ваше имя" id="name" name="name")
+                            input.action-form__input.input(type="text" placeholder="Ваш телефон" id="tel" name="tel")
+                            button(type="submit").action-form__btn.btn-main Узнать условия акции
                             .action-form__agree
                                 span.action-form__fake-checkbox
                                 span Я принимаю условия <br> передачи информации

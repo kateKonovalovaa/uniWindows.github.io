@@ -10,7 +10,6 @@ $(function () {
 
   const scene = new ScrollMagic.Scene({
     triggerElement: ".form-2",
-    reverse: false,
     triggerHook: 0.4
   })
     .addIndicators({
@@ -21,4 +20,50 @@ $(function () {
     })
     .setTween(tween1)
     .addTo(controller);
+
+  //обработка формы
+  $('#form-2').find("#tel").mask("+7(999) 999-9999");
+
+  $('#form-2').submit(function (e) {
+
+    e.preventDefault();
+
+    let name = $('#form-2').find('[name="name"]');
+    name.val(name.val().trim());
+    let tel = $('#form-2').find('[name="tel"]')
+
+    if (name.val().length < 3) {
+      name.addClass('error')
+      name.one('focus', function (e) {
+        name.removeClass('error')
+      })
+      return false
+    } else if (tel.val().length < 12) {
+      tel.addClass('error')
+      tel.one('focus', function () {
+        tel.removeClass('error')
+      })
+      return false
+    }
+
+    let form = $('#form-2')[0];
+    let formData = new FormData(form);
+    formData = Object.fromEntries(formData);
+    console.log(JSON.stringify(formData))
+
+    let url = 'http://localhost:3000/request';
+    ajaxSend(url, formData, function () {
+      $('input').val('');
+    });
+    form.reset();
+
+    // $.ajax({
+    //     url: 'http://localhost:3000/request',
+    //     method: 'POST',
+    //     data: formData,
+
+    // }).done(function(data){
+    //     console.log('окей')
+    // })
+  })
 })

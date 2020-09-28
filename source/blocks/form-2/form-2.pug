@@ -5,20 +5,20 @@ mixin form-2()
                 h2.form-2__title.title-2 У Вас уже есть предложение от <br> другой компании?
                 p.form-2__text Пришлите его нам и мы обязательно  <br> сделаем Вам более выгодное предложение.
                 .form-2__body
-                    .form-2__action-form.action-form
+                    form.form-2__action-form.action-form(id="form-2")
                         h3.action-form__title.title-3 Отправить
-                        input.action-form__input.input(type="text" placeholder="Ваше имя" id="name")
-                        input.action-form__input.input(type="text" placeholder="Ваш телефон" id="phone")
+                        input.action-form__input.input(type="text" placeholder="Ваше имя" id="name" name="name")
+                        input.action-form__input.input(type="text" placeholder="Ваш телефон" id="tel" name="tel")
                         div.action-form__file-load.file-load
-                            img.file-load__img(src="../../assets/images/file.svg")
+                            img.file-load__img(src="././assets/images/file.svg")
                             label.file-load__label(for="fileLoad")
-                                //- input.file-load__input(type="file" id="fileLoad")
+                                input.file-load__input(type="file" id="fileLoad" name="file")
                                 span.file-load__btn.btn-link загрузите документ
                                 span.file-load__text--light (файл не более 2 Мб)
-                        button.action-form__btn.btn-main Получить выгодное предложение
+                        button(type="submit").action-form__btn.btn-main Получить выгодное предложение
                         .action-form__agree
                             span.action-form__fake-checkbox
                             span Я принимаю условия передачи <br> информации
-        .form-2__man: img(src="../../assets/images/man.png")
-        .form-2__transition-img: img(src="../../assets/images/advantages-top.png")
-        .form-2__transition-img-2: img(src="../../assets/images/choice-bottom.png")
+        .form-2__man: img(src="././assets/images/man.png")
+        .form-2__transition-img: img(src="././assets/images/advantages-top.png")
+        .form-2__transition-img-2: img(src="././assets/images/choice-bottom.png")
