@@ -30,7 +30,7 @@
         "gulp-stylus": "^2.6.0",
         "uglify-js-es6": "^2.8.9",
         "imagemin-pngquant": "^5.0.1",
-        "pug": "^2.0.0-rc.4"
+        "pug": "^3.0.1"
     },
     "bugs": {
         "url": ""
