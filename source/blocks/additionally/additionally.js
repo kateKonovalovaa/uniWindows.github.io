@@ -19,12 +19,6 @@ $(function(){
     reverse: false,
     triggerHook: 0.6
   })
-    .addIndicators({
-      name: "Box Timeline",
-      colorTrigger: "black",
-      colorStart: "black",
-      colorEnd: "black"
-    })
     .setTween(tween1)
     .addTo(controller);
 
@@ -33,12 +27,6 @@ $(function(){
       reverse: false,
       triggerHook: 0.4
     })
-      .addIndicators({
-        name: "Box Timeline",
-        colorTrigger: "black",
-        colorStart: "black",
-        colorEnd: "black"
-      })
       .setTween(tween2)
       .addTo(controller);
 })

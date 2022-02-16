@@ -12,12 +12,6 @@ $(function () {
     triggerElement: ".form-2",
     triggerHook: 0.4
   })
-    .addIndicators({
-      name: "Box Timeline",
-      colorTrigger: "black",
-      colorStart: "black",
-      colorEnd: "black"
-    })
     .setTween(tween1)
     .addTo(controller);
 

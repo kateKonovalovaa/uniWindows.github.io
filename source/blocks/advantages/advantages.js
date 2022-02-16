@@ -26,12 +26,6 @@ $(function(){
     reverse: false,
     triggerHook: 0.4
   })
-    .addIndicators({
-      name: "Box Timeline",
-      colorTrigger: "black",
-      colorStart: "black",
-      colorEnd: "black"
-    })
     .setTween(tl)
     .addTo(controller);
 })
