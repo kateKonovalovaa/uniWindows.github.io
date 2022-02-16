@@ -187,7 +187,11 @@ p {
   font: 16px/1 'Museo Sans Regular', sans-serif;
   color: #9b9892;
 }
-.input:-ms-input-placeholder {
+.input::-moz-placeholder {
+  font: 16px/1 'Museo Sans Regular', sans-serif;
+  color: #9b9892;
+}
+.input::-ms-input-placeholder {
   font: 16px/1 'Museo Sans Regular', sans-serif;
   color: #9b9892;
 }
@@ -203,7 +207,10 @@ p {
 .input.error::-webkit-input-placeholder {
   color: #cb0707;
 }
-.input.error:-ms-input-placeholder {
+.input.error::-moz-placeholder {
+  color: #cb0707;
+}
+.input.error::-ms-input-placeholder {
   color: #cb0707;
 }
 .input.error::placeholder {
@@ -235,7 +242,11 @@ p {
   font: 16px/1 'Museo Sans Regular', sans-serif;
   color: #9b9892;
 }
-.textarea:-ms-input-placeholder {
+.textarea::-moz-placeholder {
+  font: 16px/1 'Museo Sans Regular', sans-serif;
+  color: #9b9892;
+}
+.textarea::-ms-input-placeholder {
   font: 16px/1 'Museo Sans Regular', sans-serif;
   color: #9b9892;
 }
@@ -1895,7 +1906,7 @@ p {
   width: 250px;
 }
 @media (max-width: 1320px) {
-  .slider__left {
+  .slider__left1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1962,23 +1973,23 @@ p {
     display: none;
   }
 }
-.slider__btn-slide--right {
+.slider__btn-slide--right1 {
   margin-left: auto;
 }
 @media (max-width: 750px) {
-  .slider__btn-slide--right {
+  .slider__btn-slide--right1 {
     right: 0;
   }
 }
-.slider__btn-slide--right img {
+.slider__btn-slide--right1 img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.slider__btn-slide--right span {
+.slider__btn-slide--right1 span {
   text-align: left;
   left: 0;
 }
-.slider__btn-slide--right:hover {
+.slider__btn-slide--right1:hover {
   -webkit-transform: translateX(10%);
           transform: translateX(10%);
 }

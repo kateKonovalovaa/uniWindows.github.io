@@ -1,7 +1,12 @@
 $(function () {
-  ymaps.ready(init);
+  let isInit = false
+
+  if(!isInit) {
+    ymaps.ready(init);
+  }
 
   function init() {
+    isInit = true
     const myMap = new ymaps.Map("map", {
       // Координаты центра карты.
       // Порядок по умолчнию: «широта, долгота».

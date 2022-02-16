@@ -9,18 +9,18 @@ $(function(){
         dotsEach: true
     })
 
-    const prevBtn = $('.slider__btn-slide--left');
-    const nextBtn = $('.slider__btn-slide--right');
+    const prevBtn = $('.slider__btn-slide--left1');
+    const nextBtn = $('.slider__btn-slide--right1');
 
     $('.pagination__elem').click(function(){
         slider.trigger('to.owl.carousel', [$(this).index(), 1000])
     })
 
-    prevBtn.click(function(){
+    prevBtn.click(function(event){
         slider.trigger("prev.owl.carousel");
     })
 
-    nextBtn.click(function(){
+    nextBtn.click(function(event){
         slider.trigger("next.owl.carousel");
     })
 
@@ -31,7 +31,6 @@ $(function(){
 
     slider.on('changed.owl.carousel', function(e) {
         const index = e.item.index - 2
-        console.log(index)
         prevTitle.text(btnTitles[index-1])
         nextTitle.text(btnTitles[index+1])
     })
